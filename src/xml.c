@@ -496,7 +496,7 @@ xml_parse_data_dom(XMLParser *parser, char *data)
   XML_SetUserData(p, (void *)parser);
 
   if (! XML_Parse(p, data, strlen(data), 1)) {
-    fprintf(stderr, "Matchbox: XML Parse error at line %d:\n%s\n",
+    fprintf(stderr, "Matchbox: XML Parse error at line %ld:\n%s\n",
 	    XML_GetCurrentLineNumber(p),
 	    XML_ErrorString(XML_GetErrorCode(p)));
     return NULL;
