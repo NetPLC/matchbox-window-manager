@@ -3,7 +3,6 @@ AC_INIT([matchbox-window-manager], 1.2.2, [yocto@yoctoproject.org])
 AC_CONFIG_SRCDIR([src/wm.c])
 
 AM_INIT_AUTOMAKE()
-AM_MAINTAINER_MODE
 AC_CONFIG_HEADERS([config.h])
 
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
